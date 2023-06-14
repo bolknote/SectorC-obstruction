@@ -36,7 +36,7 @@ void *check_collision(void *arg)
     char *s = calloc(MAXLEN + 1, sizeof(char));
     thread_args_t *args = (thread_args_t*)arg;
 
-    printf("Thread #%d started ('%c' - '%c')\n", args->n, (char) args->min, (char) args->max);
+    fprintf(stderr, "Thread #%d started ('%c' - '%c')\n", args->n, (char) args->min, (char) args->max);
 
     for (int len = 1; len <= MAXLEN; len++) {
         int i;
