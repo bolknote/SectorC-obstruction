@@ -14,9 +14,9 @@
 #define MAXCHAR '~'
 #define MINCHAR ' ' + 1
 
-short sectorc_atoi(const char *s)
+unsigned short sectorc_atoi(const char *s)
 {
-    short n = 0;
+    unsigned short n = 0;
     for (;;) {
         char c = *s++;
         if (!c) break;
